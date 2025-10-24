@@ -14,7 +14,7 @@ import random
 # ===========================================
 @st.cache_resource
 def load_models():
-    yolo_model = YOLO("Model/Riri Andriani_Laporan 4.pt")
+    yolo_model = YOLO("Model/Riri Andriani_Laporan_4.pt")
     classifier = tf.keras.models.load_model("Model/saved_model.keras")
     return yolo_model, classifier
 
